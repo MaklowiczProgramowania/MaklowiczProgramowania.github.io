@@ -1,0 +1,331 @@
+body {
+    font-family: 'PT Serif', serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    background-image: url("../img/tlo.png");
+
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+        
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#logo {
+    text-shadow: 1px 1px #808080;
+    letter-spacing: 2px;
+    font-size: 20px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 10px;
+    background-image: url("../img/tlo.png");
+    border-radius: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav {
+    width: 600px;
+    display: block;
+    position: sticky;
+    float: right;
+    top: 0;
+    z-index: 999;
+    margin-left: 100px;
+    font-size: 25px;
+    background-image: url("../img/tlo.png");
+    border-radius: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+nav li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+article {
+    width: 80%;
+    display: block;
+    position: relative;
+    height: 70vh;
+}
+
+#Start {
+    float: left;
+    margin: 3% 10%;
+    color: #202020;
+}
+
+#Start-Icons {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    position: relative;
+    margin-right: 10px;
+    padding: 10px 0;
+    color: white;
+    background: rgb(42,65,177);
+    background: linear-gradient(90deg, rgba(42,65,177,1) 0%, rgba(204,26,26,1) 50%, rgba(246,140,65,1) 100%);
+    border-radius: 50px;
+}
+
+.fa-graduation-cap, .fa-computer, .fa-globe {
+    font-size: 100px;
+    padding: 10px;
+}
+
+#Start-Text {
+    width: 65%;
+    float: left;
+    display: block;
+    position: relative;
+    font-size: 40px;
+    text-shadow: 1px 1px #808080;
+    margin-left: 20px;
+}
+
+#Start p {
+    line-height: 1.5;
+    font-size: 28px;
+    margin-top: 50px;
+    padding-left: 20px;
+    width: 56%;
+    float: left;
+}
+
+#Start-Icon-Baner {
+    float: right;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+#Baner-Grad-Icon {
+    color: white;
+    float: left;
+    display: block;
+    position: relative;
+    background-color: #cc1a1a;
+    border-radius: 35px;
+}
+
+#Baner-Comp-Icon {
+    color: white;
+    float: left;
+    display: block;
+    position: relative;
+    background-color: #2a41b1;
+    border-radius: 35px;
+    margin-top: 200px;
+}
+
+#Baner-Glob-Icon {
+    color: white;
+    float: left;
+    display: block;
+    position: relative;
+    background-color: #f68c41;
+    border-radius: 35px;
+}
+
+.box {
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transform-origin: bottom;
+}
+
+#My-skills {
+    line-height: 1.5;
+    font-size: 60px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#My-skills h2{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#MS-HTML {
+    width: 230px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: #000000;
+    font-family: 'Gotham Ultra', sans-serif;
+    border-radius: 50px;
+    background: rgb(227,76,38);
+    background: linear-gradient(90deg, rgba(227,76,38,1) 0%, rgba(240,101,41,1) 80%);
+}
+
+#MS-CSS {
+    width: 180px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: #000000;
+    font-family: 'Gotham Ultra', sans-serif;
+    border-radius: 50px;
+    background: rgb(38,77,228);
+    background: linear-gradient(90deg, rgba(38,77,228,1) 0%, rgba(41,101,241,1) 80%);
+}
+
+#MS-JS {
+    width: 330px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: #323330;
+    font-family: 'Gotham Ultra', sans-serif;
+    border-radius: 50px;
+    background-color: #f0db4f;
+}
+
+#MS-GIT {
+    width: 100px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: #ffffff;
+    font-family: 'Gotham Ultra', sans-serif;
+    border-radius: 50px;
+    background-color: #f34f29;
+}
+
+#Contact-me {
+    font-size: 60px;
+    margin: auto;
+    padding: 0;
+}
+
+#Contact-me h2{
+    font-size: 60px;
+    margin: 5rem 0rem 1rem 6rem;
+    text-align: center;
+}
+
+#Contact-me #container{
+    margin: auto;
+    padding: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact-me a{
+    font-weight: bold;
+    margin: 1rem 5rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact-me a i{
+    font-size: 7.5rem;
+}
+
+#CM-Link {
+    color: #cc1a1a;
+}
+
+#CM-Git {
+    color: #2a41b1;
+}
+
+#CM-Mail {
+    color: #f68c41;
+}
+
+#Resume {
+    line-height: 1.5;
+    font-size: 28px;
+}
+
+.reveal_from_right {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal_from_left {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal_from_right.active, .reveal_from_left.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+footer {
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    padding-bottom: 1rem;
+    background-image: url("../img/tlo.png");
+}
+
+footer h3{
+    padding-right: 10rem;
+}
